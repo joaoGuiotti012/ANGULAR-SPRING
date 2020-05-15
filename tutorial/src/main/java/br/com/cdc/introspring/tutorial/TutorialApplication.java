@@ -21,7 +21,7 @@ public class TutorialApplication {
     ApplicationRunner init(CarRepository repository) {
 		return args -> {
             Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
-                      "AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(nome -> {
+                      "AMC Gremlin", "Triumph Stag", "Ford Punto", "Yugo GV").forEach(nome -> {
         	  Car car = new Car();
               car.setNome(nome);
               repository.save(car);
